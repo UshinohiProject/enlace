@@ -1,0 +1,12 @@
+.center {
+    text-align: center;
+}
+
+.link-button {
+    margin-top: 10px;
+}
+
+.link-button button {
+    width: 100px;
+    height: 40px;
+}
