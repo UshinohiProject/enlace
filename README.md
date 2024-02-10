@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4482be01-761f-4cd5-8677-579a0016365c/deploy-status)](https://app.netlify.com/sites/loquacious-kashata-59daaa/deploys)
+# Tsumugi
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
