@@ -6,12 +6,14 @@ import './App.css';
 // import Header from './components/molecules/Header'
 // import Footer from './components/molecules/Footer'
 import Top from './components/molecules/Top'
+import Tsumugu from './components/molecules/Tsumugu'
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route exact path={`/`} element={<Top />} />
+        <Route path={'/Tsumugu'} element={<Tsumugu />} />
       </Routes>
     </Router>
   );

@@ -7,9 +7,8 @@ class Top extends React.Component {
         return (
             <div className='center'>
                 <h1>つむぎちゃん</h1>
-                {/* `/Tsumugi`へ遷移 */}
                 <div className="link-button">
-                    <Link to="/">
+                    <Link to="/Tsumugu">
                         <button>つむぐ</button>
                     </Link>
                 </div>
