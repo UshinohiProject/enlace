@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import './Edit.css';
+import { FaAngleLeft } from "react-icons/fa";
 
 const Edit = () => {
     // useLocation()を使って受け取れる
@@ -23,6 +24,16 @@ const Edit = () => {
                 />
                 <Link to="/Story" state={{ storyID: storyID, newStory: story }}>
                     <button>つむぐ</button>
+                </Link>
+            </div>
+            <div className='button-back'>
+                <Link to="/Tsumugu">
+                    <button>
+                        <div className='fa-angle-left'>
+                            <FaAngleLeft />
+                        </div>
+                        戻る
+                    </button>
                 </Link>
             </div>
         </div>

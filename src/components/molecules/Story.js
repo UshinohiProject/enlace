@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import './Story.css';
+import { FaAngleLeft } from "react-icons/fa";
 
 const Story = () => {
     // useLocation()を使って受け取れる
@@ -44,6 +45,16 @@ const Story = () => {
                         {data ? <div className='story'>{JSON.stringify(data[3], null, 2)}</div> : 'Loading...'}
                     </div>
                 </div>
+            </div>
+            <div className='button-back'>
+                <Link to="/Stories">
+                    <button>
+                        <div className='fa-angle-left'>
+                            <FaAngleLeft />
+                        </div>
+                        戻る
+                    </button>
+                </Link>
             </div>
         </div>
     );
