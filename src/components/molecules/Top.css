@@ -10,3 +10,59 @@
     width: 100px;
     height: 40px;
 }
+
+.logo-tsumugi {
+    width: 90vw;
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+.title-tsumugi {
+    font-size: 40px;
+}
+
+.greeting {
+    font-size: 20px;
+    color: #fff;
+    margin: 30px auto;
+    padding-top: 30px;
+}
+
+.button-top {
+    /* display: block; */
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    background-color: #efefef;
+    border: 1px solid;
+    border-radius: 16px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.button-tsumugu {
+    background-color: #000;
+    border: #ddd;
+    color: #fff;
+}
+
+.button-read {
+    background-color: #fff;
+    border: #ddd;
+    color: #000;
+}
+
+.radius-top {
+    border-radius: 40px 40px 0 0;
+    height: calc(100vh - 73vw - 60px - 33.6px - 60px - 10px);
+}
+
+@media screen and (min-width: 640px) {
+    /* 481px以上に適用されるCSS（タブレット用） */
+    .radius-top {
+        border-radius: 40px 40px 0 0;
+        height: 230px;
+    }
+}
