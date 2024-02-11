@@ -7,6 +7,7 @@ import './App.css';
 // import Footer from './components/molecules/Footer'
 import Top from './components/molecules/Top'
 import Tsumugu from './components/molecules/Tsumugu'
+import Edit from './components/molecules/Edit'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path={`/`} element={<Top />} />
         <Route path={'/Tsumugu'} element={<Tsumugu />} />
+        <Route path={'/Edit'} element={<Edit />} />
       </Routes>
     </Router>
   );
