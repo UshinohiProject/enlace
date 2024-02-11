@@ -59,7 +59,7 @@ class Tsumugu extends React.Component {
                             <Link to="/">
                                 <button disabled>つむぎ中</button>
                             </Link> : 
-                            <Link to="/Edit" state={{ storyID: item[0], story: item[3] }}>
+                            <Link to="/Edit" state={{ storyID: item[0], originalStory: item[3] }}>
                                 <button>つむぐ</button>
                             </Link>
                             }
