@@ -14,7 +14,7 @@ class Top extends React.Component {
                 </div>
                 {/* `/Bookshelf`へ遷移 */}
                 <div className="link-button">
-                    <Link to="/">
+                    <Link to="/Stories">
                         <button>よむ</button>
                     </Link>
                 </div>
