@@ -41,7 +41,7 @@ class Tsumugu extends React.Component {
         const parsedData = JSON.parse(jsonData);
 
         // 新しい多次元リストを作成
-        const extractedData = parsedData.stories.map(story => [story[0], story[2], story[6]]);
+        const extractedData = parsedData.stories.map(story => [story[0], story[2], story[6], story[3]]);
 
         return (
             <div>
@@ -59,7 +59,7 @@ class Tsumugu extends React.Component {
                             <Link to="/">
                                 <button disabled>つむぎ中</button>
                             </Link> : 
-                            <Link to="/">
+                            <Link to="/Edit" state={{ storyID: item[0], story: item[3] }}>
                                 <button>つむぐ</button>
                             </Link>
                             }
@@ -71,4 +71,4 @@ class Tsumugu extends React.Component {
     }
 }
 
-export default Tsumugu
+export default Tsumugu;
