@@ -15,10 +15,10 @@ class Top extends React.Component {
                     </div>
                     <div className="link-button">
                         <Link to="/Stories">
-                            <button className='button-top button-tsumugu'>よむ</button>
+                            <button className='button-top button-read'>よむ</button>
                         </Link>
                         <Link to="/Tsumugu">
-                            <button className='button-top button-read'>つむぐ</button>
+                            <button className='button-top button-tsumugu'>つむぐ</button>
                         </Link>
                     </div>
                 </div>

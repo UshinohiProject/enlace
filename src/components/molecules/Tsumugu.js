@@ -46,23 +46,25 @@ class Tsumugu extends React.Component {
         return (
             <div>
                 <div>
-                    <h3 className='center'>物語を選んでください。</h3>
+                    <h3 className='center background-red choose-tsumugu'>物語を選んでください。</h3>
                 </div>
-                <div>
+                <div className='tsumugi-stories'>
                     {extractedData.map((item, index) => (
-                        <div className='center'>
-                            {item[1]}
-                            <Link to="/">
-                                <button>よむ</button>
-                            </Link>
-                            {item[2] === false ?
-                            <Link to="/Edit" state={{ storyID: item[0], originalStory: item[3] }}>
-                                <button>つむぐ</button>
-                            </Link>  : 
-                            <Link to="/">
-                                <button disabled>つむぎ中</button>
-                            </Link>
-                            }
+                        <div className='tsumugi-story'>
+                            <span className='tsumugu-story-title'>{item[1]}</span>
+                            <span className='tsumugu-story-buttons'>
+                                <Link to="/Story" state={{ storyID: item[0] }}>
+                                    <button className='button-top-2 button-read-2'>よむ</button>
+                                </Link>
+                                {item[2] === false ?
+                                    <Link to="/Edit" state={{ storyID: item[0], originalStory: item[3] }}>
+                                        <button className='button-top-2 button-tsumugu-2'>つむぐ</button>
+                                    </Link> :
+                                    <Link to="/">
+                                        <button className='button-top-2 button-tsumugenai-2' disabled>つむぎ中</button>
+                                    </Link>
+                                }
+                            </span>
                         </div>
                     ))}
                 </div>
