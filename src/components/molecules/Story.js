@@ -32,7 +32,7 @@ const Story = () => {
         };
 
         fetchData();
-    }, []);
+    }, [endpointUrl]);
 
     return (
         <div>
