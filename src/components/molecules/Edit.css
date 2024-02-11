@@ -1,0 +1,48 @@
+.time-remaining {
+    margin-top: 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.inputed-story-box {
+    max-width: 400px;
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    font-weight: 600;
+}
+
+.edit-box {
+    width: 80vw;
+    max-width: 400px;
+    margin: 0 auto 0 auto;
+}
+
+#large-textbox {
+    width: calc(100% - 20px);
+    max-width: 80vw;
+    height: 100px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+}
+
+.button-top-3 {
+    /* display: block; */
+    height: 50px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    background-color: #E93423;
+    color: #fff;
+    border: 0px solid;
+    border-radius: 10px;
+    margin: 10px 0.5px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.div-right-align {
+    text-align: right;
+}
