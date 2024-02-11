@@ -43,15 +43,15 @@
 }
 
 .button-tsumugu {
-    background-color: #000;
-    border: #ddd;
-    color: #fff;
-}
-
-.button-read {
     background-color: #fff;
     border: #ddd;
     color: #000;
+}
+
+.button-read {
+    background-color: #000;
+    border: #ddd;
+    color: #fff;
 }
 
 .radius-top {
