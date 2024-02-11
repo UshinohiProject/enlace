@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Stories.css';
+import { FaAngleLeft } from "react-icons/fa";
 
 class Stories extends React.Component {
     constructor(props) {
@@ -44,19 +45,28 @@ class Stories extends React.Component {
         const extractedData = parsedData.stories.map(story => [story[0], story[2], story[3]]);
 
         return (
-            <div>
+            <div className='background-red'>
                 <div>
-                    <h3 className='center'>物語を選んでください。</h3>
+                    <h3 className='center story-title text-white'>物語を選んでください。</h3>
                 </div>
-                <div>
+                <div className='background-white stories-box border-radius'>
                     {extractedData.map((item, index) => (
                         <div className='center'>
-                            {item[1]}
                             <Link to="/Story" state={{ storyID: item[0] }}>
-                                <button>よむ</button>
+                                <button className='button-story'>{item[1]}</button>
                             </Link>
                         </div>
                     ))}
+                </div>
+                <div className='button-back'>
+                    <Link to="/">
+                        <button>
+                            <div className='fa-angle-left'>
+                                <FaAngleLeft />
+                            </div>
+                            戻る
+                        </button>
+                    </Link>
                 </div>
             </div>
         );

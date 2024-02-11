@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Tsumugu.css';
+import { FaAngleLeft } from "react-icons/fa";
 
 class Tsumugu extends React.Component {
     constructor(props) {
@@ -67,6 +68,16 @@ class Tsumugu extends React.Component {
                             </span>
                         </div>
                     ))}
+                </div>
+                <div className='button-back'>
+                    <Link to="/">
+                        <button>
+                            <div className='fa-angle-left'>
+                                <FaAngleLeft />
+                            </div>
+                            戻る
+                        </button>
+                    </Link>
                 </div>
             </div>
         );
