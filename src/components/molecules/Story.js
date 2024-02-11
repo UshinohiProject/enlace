@@ -35,11 +35,14 @@ const Story = () => {
     }, [endpointUrl]);
 
     return (
-        <div>
-            <h3 className='center'>{data ? <div>{JSON.stringify(data[2], null, 2)}</div> : 'Loading...'}</h3>
+        <div className='background-red background-fullscreen'>
             <div>
-                <div className='story-box center'>
-                    {data ? <div>{JSON.stringify(data[3], null, 2)}</div> : 'Loading...'}
+                <h2 className='center story-title gray-text'>今週の物語</h2>
+                <div>
+                    <div className='story-box background-white border-radius'>
+                        <h3 className='center story-title'>{data ? <div>{JSON.stringify(data[2], null, 2)}</div> : ''}</h3>
+                        {data ? <div className='story'>{JSON.stringify(data[3], null, 2)}</div> : 'Loading...'}
+                    </div>
                 </div>
             </div>
         </div>

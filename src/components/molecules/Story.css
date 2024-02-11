@@ -3,3 +3,36 @@
     width: 90vw;
     margin: 0 auto 0 auto;
 }
+
+.story {
+    margin: 0 40px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.gray-text {
+    color: #444444;
+}
+
+.story-title {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.background-red {
+    background-color: #E93423;
+}
+
+.background-fullscreen {
+    height: 100vh;
+}
+
+.background-white {
+    background-color: #fff;
+}
+
+.border-radius {
+    border-radius: 37px
+}

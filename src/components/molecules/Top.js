@@ -1,22 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LogoTsumugi from './img/tsumugi.png'
 import './Top.css';
 
 class Top extends React.Component {
     render() {
         return (
             <div className='center'>
-                <h1>つむぎちゃん</h1>
-                <div className="link-button">
-                    <Link to="/Tsumugu">
-                        <button>つむぐ</button>
-                    </Link>
-                </div>
-                {/* `/Bookshelf`へ遷移 */}
-                <div className="link-button">
-                    <Link to="/Stories">
-                        <button>よむ</button>
-                    </Link>
+                <img className="logo-tsumugi" alt='The logo of Tsumugi' src={LogoTsumugi}></img>
+                <h1 className='title-tsumugi gray-text'>つむぎちゃん</h1>
+                <div className='background-red radius-top'>
+                    <div>
+                        <p className='greeting'>丸の内線へようこそ！</p>
+                    </div>
+                    <div className="link-button">
+                        <Link to="/Stories">
+                            <button className='button-top button-tsumugu'>よむ</button>
+                        </Link>
+                        <Link to="/Tsumugu">
+                            <button className='button-top button-read'>つむぐ</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         );
